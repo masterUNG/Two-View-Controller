@@ -19,6 +19,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func gotoSecond(sender: AnyObject) {
+        
+        let goToSecond = self.storyboard?.instantiateViewControllerWithIdentifier("masterUngView") as! MasterUngViewController
+        
+        self.navigationController?.pushViewController(goToSecond, animated: true)
+        
+        
+    }
+    
+    
 
 
 }
